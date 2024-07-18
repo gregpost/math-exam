@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Экзаменационный вопрос: Понятие матрицы и действия над матрицами</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .matrix {
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Понятие матрицы -->
+    <h1>Понятие матрицы</h1>
+    <p>
+        <strong>Матрица</strong> — это математический объект, представленный в виде прямоугольной таблицы чисел, символов или выражений, расположенных в строках и столбцах. Размеры матрицы указываются как <em>m</em> &times; <em>n</em>, где <em>m</em> — число строк, а <em>n</em> — число столбцов.
+    </p>
+    <p>Пример матрицы размером 2 &times; 3:</p>
+    <div class="matrix">
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td>a<sub>11</sub></td>
+                <td>a<sub>12</sub></td>
+                <td>a<sub>13</sub></td>
+            </tr>
+            <tr>
+                <td>a<sub>21</sub></td>
+                <td>a<sub>22</sub></td>
+                <td>a<sub>23</sub></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Действия над матрицами -->
+    <h1>Действия над матрицами</h1>
+    <h2>1. Сложение матриц</h2>
+    <p>
+        Две матрицы можно складывать, если они имеют одинаковые размеры. Сложение производится поэлементно:
+    </p>
+    <div>
+        <span class="matrix">
+            <table border="1" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </table>
+        </span>
+        <span> + </span>
+        <span class="matrix">
+            <table border="1" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+            </table>
+        </span>
+        <span> = </span>
+        <span class="matrix">
+            <table border="1" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td>6</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>12</td>
+                </tr>
+            </table>
+        </span>
+    </div>
+
+    <h2>2. Вычитание матриц</h2>
+    <p>
+        Вычитание матриц также производится поэлементно и возможно при одинаковых размерах:
+    </p>
+    <div>
+        <span class="matrix">
+            <table border="1" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td>9</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>6</td>
+                </tr>
+            </table>
+        </span>
+        <span> - </span>
+        <span class="matrix">
+            <table border="1" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td>4</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </span>
+        <span> = </span>
+        <span class="matrix">
+            <table border="1" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td>5</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>5</td>
+                </tr>
+            </table>
+        </span>
+    </div>
+
+    <h2>3. Умножение матриц</h2>
+    <p>
+        
+        Для умножения матрицы A размером <em>m</em> &times; <em>n</em> и матрицы B размером <em>n</em> &times; <em>p</em> необходимо, чтобы число столбцов матрицы A было равно числу строк матрицы B. Результатом умножения будет матрица размером <em>m</em> &times; <em>p</em>.
+    </p>
+    <p>
+        Например, умножение двух матриц 2 &times; 2:
+    </p>
+    <div>
+        <span class="matrix">
+            <table border="1" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </table>
+        </span>
+        <span> &times; </span>
+        <span class="matrix">
+            <table border="1" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </span>
+        <span> = </span>
+        <span class="matrix">
+            <table border="1" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td>4</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>8</td>
+                </tr>
+            </table>
+        </span>
+    </div>
+
+    <h2>4. Транспонирование матриц</h2>
+    <p>
+        Транспонирование матрицы заключается в замене строк матрицы на её столбцы и наоборот. Например, транспонирование матрицы 2 &times; 3:
+    </p>
+    <div>
+        <span class="matrix">
+            <table border="1" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+            </table>
+        </span>
+        <span> &rarr; </span>
+        <span class="matrix">
+            <table border="1" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td>1</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>6</td>
+                </tr>
+            </table>
+        </span>
+    </div>
+</body>
+</html>
